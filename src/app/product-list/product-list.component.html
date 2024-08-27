@@ -1,0 +1,11 @@
+<pinch-zoom>
+  <div class="book-container">
+    <div class="book-page" *ngFor="let page of products; let i = index">
+      <div class="card">
+        <div class="card-content">
+          <img [src]="page.url" alt="Page {{ i + 1 }}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</pinch-zoom>
